@@ -170,8 +170,8 @@ def getLetters(text, brightness):
 
     return pixels        
         
-def createImage(text, name):
-    pixels = getLetters(text, 255)
+def createImage(text, brightness, name):
+    pixels = getLetters(text, brightness)
 
     array = np.array(pixels, dtype=np.uint8)
 
@@ -181,6 +181,8 @@ def createImage(text, name):
 
 def main():
     text = input("Enter text to convert to subpixel image: ")
+    brightness = int(input("Enter pixel brightness[1-255]: "))
+    
     imgname = "img/" + text
     i = 1
     
@@ -188,7 +190,7 @@ def main():
         imgname = imgname + str(i)
         i += i
 
-    createImage(text, imgname)
+    createImage(text, brightness, imgname)
 
     print("Subpixel text created! Find it at", imgname + ".png")
 
