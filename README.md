@@ -9,7 +9,7 @@ a subpixel reffers to each of those three parts.
 Subpixels are often arranged in bars ordered red, green then blue, like this:  
 ![Screenshot 2024-11-23 at 15 12 55](https://github.com/user-attachments/assets/d15710ca-8707-4a1c-85d3-60ff08ec8ffd)
 
-and by turning each of these bars off and on, we can display images smaller than one pixel (awesome i know), essentially tripleing your monitors horizontal resolution!
+and by turning each of these bars off and on, we can display images smaller than one pixel (awesome i know), essentially tripling your monitors horizontal resolution!
 
 ![SubPixelHi](https://github.com/user-attachments/assets/60d6b10c-0328-46f2-9bf4-86d2787090f2)  
 HI written in 2x4 pixels by turning on and off each subpixel in the pixels.  
