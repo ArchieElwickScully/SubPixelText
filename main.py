@@ -134,6 +134,12 @@ class Letters:
                              "mto" : [0, 0, 1],
                              "mbo" : [1, 1, 0],
                              "bot" : [1, 1, 1]},
+                        " " :
+                            {"top" : [0, 0, 0],
+                             "mto" : [0, 0, 0],
+                             "mbo" : [0, 0, 0],
+                             "bot" : [0, 0, 0]},
+
         }
 
     def get(self, letter, pos):
@@ -183,6 +189,8 @@ def main():
         i += i
 
     createImage(text, imgname)
+
+    print("Subpixel text created! Find it at", imgname + ".png")
 
 
 
